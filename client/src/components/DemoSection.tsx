@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
-import { Sparkles, Loader2, BookOpen, Backpack } from "lucide-react";
+import { Sparkles, Loader2, BookOpen, ShoppingBag } from "lucide-react";
 import { parseHomeworkText } from "@/utils/parser";
 import type { ParsedTask } from "@shared/schema";
 
@@ -94,7 +94,7 @@ Science: Read chapter 5 and answer questions 1-5 25-9-2025`;
                       <div className="flex items-start gap-3 mb-4">
                         <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                           {tasks[0].type === 'bring' ? (
-                            <Backpack className="w-6 h-6 text-chart-4" />
+                            <ShoppingBag className="w-6 h-6 text-chart-4" />
                           ) : (
                             <BookOpen className="w-6 h-6 text-primary" />
                           )}

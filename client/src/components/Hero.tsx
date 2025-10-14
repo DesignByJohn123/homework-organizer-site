@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { BookOpen, Download, Backpack } from "lucide-react";
+import { BookOpen, Download, ShoppingBag } from "lucide-react";
 
 interface HeroProps {
   onTryDemo: () => void;
@@ -69,7 +69,7 @@ export function Hero({ onTryDemo }: HeroProps) {
                 <div className="bg-card rounded-xl p-6 border border-card-border">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-10 h-10 rounded-lg bg-chart-4/10 flex items-center justify-center">
-                      <Backpack className="w-6 h-6 text-chart-4" />
+                      <ShoppingBag className="w-6 h-6 text-chart-4" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg">Bring Monday</h3>
