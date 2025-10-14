@@ -1,0 +1,58 @@
+I want to build a professional website for my "Daily Planner / Homework Organizer" app using React + Vite.
+
+Here’s what I want the website to do and look like:
+
+1. 🏠 **Homepage / Landing Page**
+   - Big title: “Homework Organizer”
+   - Subtitle: “An AI-powered daily planner that organizes homework, reminders, and what to bring.”
+   - Two buttons:
+     - “Try Demo” → scrolls down to demo section
+     - “Download / APK” → placeholder button for later
+   - Clean background, modern colors (blue, white, light gray)
+
+2. ⚙️ **Demo Section**
+   - A box where the user can paste text (daily plan or homework list)
+   - Example input:
+     ```
+     English: Answer grammar sheet Ex.a all and Ex.b (1,2,3) 22-9-2025
+     Bring: Think SB on Monday
+     Math: Solve page 1 (1,2)
+     ```
+   - A “Parse” button that analyzes the text and lists tasks under each subject.
+   - Show icons:
+     - 📘 for homework
+     - 🎒 for bring items
+   - Group tasks by date (if possible)
+   - Simple local parser in JavaScript (no backend yet)
+
+3. 📆 **Features Section**
+   - List main app features:
+     - Reads text or PDF daily plan
+     - Automatically sorts by subject
+     - Separates homework and bring items
+     - Adds due dates and reminders
+     - Weekly calendar view
+     - Notifications before due day
+     - Editable manually
+
+4. 💡 **How It Works Section**
+   - A small diagram-like explanation:
+     - Upload plan → AI parser → Organized by subject → Reminders added
+   - Add an FAQ with 3–4 questions (like “Is it free?”, “Can I use it on mobile?”, “Does it work offline?”)
+
+5. 📨 **Footer**
+   - “Made by John” and a contact mailto link (e.g., mailto:john@example.com)
+   - Simple copyright
+
+6. 💻 **Technical Setup**
+   - Use **React + Vite**
+   - Use **Tailwind CSS** for styling
+   - Make it **PWA-ready** (installable on phones)
+   - Add responsive design for mobile and desktop
+   - Include a small parser function inside `src/utils/parser.js` that detects subjects, “bring” keywords, and dates.
+
+7. 🌍 **Deployment**
+   - Generate `README.md` with steps to run locally (`npm install`, `npm run dev`) and deploy on Vercel.
+   - Prepare `manifest.json` and `service-worker.js` for PWA use.
+
+Please create all project files automatically (index.html, App.jsx, components, utils/parser.js, styles.css) and show me the code and structure step-by-step so I can copy it easily later.
