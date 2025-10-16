@@ -18,8 +18,20 @@
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#3b82f6" />
   </head>
+  C:\Users\USER\Desktop\DailyPlannerSite\client\index.html
   <body>
+    <!-- Temporary fallback: visible even if JS fails -->
+    <div id="fallback" style="font-family:Inter, Arial, sans-serif; padding:40px; text-align:center; background:#f8fafc; color:#0f172a;">
+      <h1>Homework Organizer</h1>
+      <p>Your site is live — the app bundle failed to load in production, so you're seeing this temporary message.</p>
+      <p><small>We're fixing the loading issue. Check back soon.</small></p>
+    </div>
+  
+    <!-- Keep root for React (but don't try to load the dev module in production) -->
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  
+    <!-- Comment out the direct module import for now so the browser doesn't attempt to load /src/main.tsx -->
+    <!-- <script type="module" src="/src/main.tsx"></script> -->
   </body>
+  
 </html>
